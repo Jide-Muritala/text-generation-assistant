@@ -49,14 +49,14 @@ This repository contains a simple interactive text generation assistant built us
     ```bash
     docker build -t text-generation-assistant .
 
-    Once the image is built, you can run the container interactively using::
+    Once the image is built, you can run the container interactively using:
 
-    ```bash
+    
     docker run -it --rm text-generation-assistant
 
     Alternatively, if you are using Docker Compose, start the container with::
 
-    ```bash
+    
     docker-compose up
 
     This command will build the image (if it hasn't been built yet) and run the container. The --rm flag in the docker run command ensures the container is removed after you exit the interactive session.

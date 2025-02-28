@@ -35,3 +35,30 @@ This repository contains a simple interactive text generation assistant built us
 5. **Note:**
 
    Make sure you have the necessary hardware or adjust settings (like max_length) based on your machine’s resources.
+
+6. **Docker:**
+
+   This repository is Docker-ready. You can build and run the text generation interactive assistant in a container without installing dependencies directly on your host machine.
+
+    - Dockerfile: Contains instructions for building the Docker image.
+    - .dockerignore: Lists files and directories to be excluded from the Docker build context.
+    - docker-compose.yml: Simplifies running the container with Docker Compose.
+
+    To build the Docker image, run:
+
+    ```bash
+    docker build -t text-generation-assistant .
+
+    Once the image is built, you can run the container interactively using::
+
+    ```bash
+    docker run -it --rm text-generation-assistant
+
+    Alternatively, if you are using Docker Compose, start the container with::
+
+    ```bash
+    docker-compose up
+
+    This command will build the image (if it hasn't been built yet) and run the container. The --rm flag in the docker run command ensures the container is removed after you exit the interactive session.
+
+
